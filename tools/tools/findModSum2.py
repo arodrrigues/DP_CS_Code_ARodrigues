@@ -9,11 +9,12 @@ Returns: int
 Preconditions: data is a list of integers a and b are both integers. 
 '''
 
-def findModSum2 (lst,a,b):
-    sums = 0  #set sums to 0
+def findModSum2 (lst,a,b):  
+    sums = 0  #assignment statement
+              #declaring variable sum and initializing it to 0
 
-    for i in range (len(lst)):  #loop through all elements
-        if lst[i] > a and lst[i] < b:  #finds if values are in between a nd b
+    for i in range (0, len(lst), 1):  #loop through all elements
+        if lst[i] > a and lst[i] < b:  #finds if values are in between a and b
             sums = sums + lst[i]   #adds the correct values to sums
 
     return sums

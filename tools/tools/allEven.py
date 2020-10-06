@@ -6,7 +6,7 @@ def isEven(n):
     while (n > 0) and (even == True):
         if (n % 10) % 2 == 1:
             even = False
-        n = n // 10
+        n = n // 10 # Integer divide by 10
         print(n)
     return even
 
