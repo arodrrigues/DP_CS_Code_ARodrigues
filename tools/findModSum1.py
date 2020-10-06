@@ -1,11 +1,31 @@
-def findModSum1(lst):
+'''
+Description: 
+Write a method called findModSum1.  The method takes a list of integers.  
+The method returns the sum of all the elements that are multiples of 3.
+Name: findModSum1
+Parameters: int[] data
+Returns: int
+Preconditions: data is a list of integers. 
+findModSum1({21,4,6,9,10,12}) → 21 + 6 + 9 + 12 = 48
+'''
 
-    sums = 0
-    for i in range(len(lst)):
-        if lst[i] % 3 ==0:
-            sums + sums = lst[i]
-    return sums
+def findModSum1(data):
+
+	sum = 0
+
+	#loop through each element
+	for i in range(0, len(data), 1):
+
+		#check if element is a multiple of 3
+		if (data[i] % 3 == 0):
+			sum = sum + data[i] #add element if multiple of three
 
 
-    samplelist = [1,2,3,4,5,6,7]
-    print(findModSum1(samplelist))
+	return sum
+
+a = [41,4,8,12,2,10]
+b = []
+c = [7]
+d = [3,3,3,3,3]
+
+print(findModSum1(a))

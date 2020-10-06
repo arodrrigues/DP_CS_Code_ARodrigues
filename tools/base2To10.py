@@ -1,18 +1,13 @@
-import tkinter as tk
+def base2To10(str):
 
-print("Stage 1")
+	n = 0
+	total = 0
 
-root = tk.Tk()
+	for i in range(len(str -1, -1, 1)):  #loops through length of the string backwards
+		total = total + int(str[i]) * 2**n 
+		n = n + 1  
 
-lab_instructions = tk.Label(root, text = "Enter Binary")
-ent_value = tk.Entry(root)
+	return total
 
-lab_results = tk.Label(root, text = "--")
-
-lab_instructions.pack()
-ent_value.pack()
-lab_results.pack()
-
-
-
-root.mainloop()
+#TESTING
+print(base2To10("101"))
